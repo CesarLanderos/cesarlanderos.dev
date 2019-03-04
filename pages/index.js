@@ -9,7 +9,8 @@ const titles = [
   "I want to change the world, one new JS library at a time.",
   "I owe my whole career to jQuery, I hope I never have to use it again.",
   "This is a simple text based webpage, and I wanted to build it using React, you're welcome.",
-  "AngularJS was amazing, let's never do that again."
+  "AngularJS was amazing, let's never do that again.",
+  "Unpopular opinion: PHP is a great languaje, i mean it!."
 ];
 
 export default class Home extends Component {

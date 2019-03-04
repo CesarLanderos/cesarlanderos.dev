@@ -1,0 +1,46 @@
+import { useState } from "react";
+import Link from "next/link";
+
+export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  return (
+    <div className="container">
+      <nav className="navbar">
+        <div className="navbar-brand">
+          <a
+            role="button"
+            className="navbar-burger burger"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
+          </a>
+        </div>
+        <div className={`navbar-menu ${isMenuOpen && "is-active"}`}>
+          <div className="navbar-end">
+            <div className="navbar-item">
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </div>
+            <div className="navbar-item">
+              <Link href="/blog">
+                <a>Blog</a>
+              </Link>
+            </div>
+            <div className="navbar-item">
+              <Link href="/about">
+                <a>About</a>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  );
+}

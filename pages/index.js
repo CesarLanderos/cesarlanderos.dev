@@ -10,21 +10,17 @@ const titles = [
   "I owe my whole career to jQuery, I hope I never have to use it again.",
   "This is a simple text based webpage, and I wanted to build it using React, you're welcome.",
   "AngularJS was amazing, let's never do that again.",
-  "Unpopular opinion: PHP is a great languaje, i mean it!."
+  "Unpopular opinion: PHP is a great languaje, I mean it!."
 ];
 
 export default class Home extends Component {
-  static getInitialProps() {
-    return { title: sample(titles) };
-  }
-
   render() {
     return (
       <MainLayout>
         <section className="hero">
           <div class="hero-body">
             <div class="container">
-              <h1 className="title">{this.props.title}</h1>
+              <h1 className="title">{sample(titles)}</h1>
               <p className="subtitle">My name is César Landeros.</p>
             </div>
           </div>

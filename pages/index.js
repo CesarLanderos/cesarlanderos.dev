@@ -19,10 +19,8 @@ export default class Home extends Component {
       <MainLayout>
         <section className="hero">
           <div class="hero-body">
-            <div class="container">
-              <h1 className="title">{sample(titles)}</h1>
-              <p className="subtitle">My name is César Landeros.</p>
-            </div>
+            <h1 className="title">{sample(titles)}</h1>
+            <p className="subtitle">My name is César Landeros.</p>
           </div>
         </section>
 

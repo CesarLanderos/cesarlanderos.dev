@@ -19,7 +19,7 @@ export default class Home extends Component {
       <MainLayout>
         <section className="hero">
           <div className="hero-body">
-            <h1 className="title">Hi!, My name is César Landeros.</h1>
+            <h1 className="title">Hi!, My name is César Landeros. test</h1>
             <p className="subtitle">{sample(phrases)}</p>
           </div>
         </section>

@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import Link from "next/link";
 
@@ -24,19 +26,13 @@ export default function Header() {
       <div className={`navbar-menu is-shadowless ${isMenuOpen && "is-active"}`}>
         <div className="navbar-end has-text-centered">
           <div className="navbar-item">
-            <Link href="/">
-              Home
-            </Link>
+            <Link href="/">Home</Link>
           </div>
           <div className="navbar-item">
-            <Link href="/blog">
-              Blog
-            </Link>
+            <Link href="/blog">Blog</Link>
           </div>
           <div className="navbar-item">
-            <Link href="/about">
-              About
-            </Link>
+            <Link href="/about">About</Link>
           </div>
         </div>
       </div>

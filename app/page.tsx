@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import sample from "lodash/sample";
-import MainLayout from "../layouts/main";
 import Section from "../components/section";
 import { useEffect, useState } from "react";
 
@@ -23,10 +22,10 @@ const Home = () => {
   }, []);
 
   return (
-    <MainLayout>
+    <>
       <section className="hero">
         <div className="hero-body">
-          <h1 className="title">Hi!, My name is César Landeros. test 6</h1>
+          <h1 className="title">Hi!, My name is César Landeros</h1>
           <p className="subtitle">{phrase}</p>
         </div>
       </section>
@@ -37,7 +36,7 @@ const Home = () => {
           First post, hello world
         </Link>
       </Section>
-    </MainLayout>
+    </>
   );
 };
 

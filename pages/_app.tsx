@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import { Sono } from "@next/font/google";
+import { Sono } from "next/font/google";
 import "bulma/css/bulma.css";
 
 const sono = Sono({

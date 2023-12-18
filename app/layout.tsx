@@ -1,15 +1,16 @@
 import "bulma/css/bulma.css";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 import { Sono } from "next/font/google";
 import Header from "../components/header";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
   title: "César Landeros",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 const sono = Sono({

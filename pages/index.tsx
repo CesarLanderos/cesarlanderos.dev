@@ -16,16 +16,14 @@ const Home = () => (
   <MainLayout>
     <section className="hero">
       <div className="hero-body">
-        <h1 className="title">Hi!, My name is César Landeros. test 3</h1>
+        <h1 className="title">Hi!, My name is César Landeros. test 4</h1>
         <p className="subtitle">{sample(phrases)}</p>
       </div>
     </section>
 
     <Section>
       <h2 className="title is-4">Featured posts</h2>
-      <Link href="/posts/first-post-hello-world">
-        First post, hello world
-      </Link>
+      <Link href="/posts/first-post-hello-world">First post, hello world</Link>
     </Section>
   </MainLayout>
 );

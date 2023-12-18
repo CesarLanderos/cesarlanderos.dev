@@ -24,7 +24,7 @@ const Home = () => (
     <Section>
       <h2 className="title is-4">Featured posts</h2>
       <Link href="/posts/first-post-hello-world">
-        <a>First post, hello world</a>
+        First post, hello world
       </Link>
     </Section>
   </MainLayout>

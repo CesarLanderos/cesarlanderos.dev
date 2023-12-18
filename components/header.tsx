@@ -25,17 +25,17 @@ export default function Header() {
         <div className="navbar-end has-text-centered">
           <div className="navbar-item">
             <Link href="/">
-              <a>Home</a>
+              Home
             </Link>
           </div>
           <div className="navbar-item">
             <Link href="/blog">
-              <a>Blog</a>
+              Blog
             </Link>
           </div>
           <div className="navbar-item">
             <Link href="/about">
-              <a>About</a>
+              About
             </Link>
           </div>
         </div>

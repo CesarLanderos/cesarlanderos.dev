@@ -8,7 +8,7 @@ function Blog() {
       <Section>
         <h1 className="title">Latests posts</h1>
         <Link href="/posts/first-post-hello-world">
-          <a>First post, hello world</a>
+          First post, hello world
         </Link>
       </Section>
     </MainLayout>

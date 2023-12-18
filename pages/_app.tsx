@@ -5,6 +5,7 @@ import "bulma/css/bulma.css";
 const sono = Sono({
   subsets: ["latin"],
   display: "swap",
+  fallback: ["monospace"],
 });
 
 export default function MyApp({ Component, pageProps }: AppProps) {

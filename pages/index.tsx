@@ -1,4 +1,3 @@
-import { Component } from "react";
 import Link from "next/link";
 import sample from "lodash/sample";
 import MainLayout from "../layouts/main";
@@ -13,24 +12,22 @@ const phrases = [
   "Unpopular opinion: PHP is a great languaje, I mean it!.",
 ];
 
-export default class Home extends Component {
-  render() {
-    return (
-      <MainLayout>
-        <section className="hero">
-          <div className="hero-body">
-            <h1 className="title">Hi!, My name is César Landeros. test</h1>
-            <p className="subtitle">{sample(phrases)}</p>
-          </div>
-        </section>
+const Home = () => (
+  <MainLayout>
+    <section className="hero">
+      <div className="hero-body">
+        <h1 className="title">Hi!, My name is César Landeros.</h1>
+        <p className="subtitle">{sample(phrases)}</p>
+      </div>
+    </section>
 
-        <Section>
-          <h2 className="title is-4">Featured posts</h2>
-          <Link href="/posts/first-post-hello-world">
-            <a>First post, hello world</a>
-          </Link>
-        </Section>
-      </MainLayout>
-    );
-  }
-}
+    <Section>
+      <h2 className="title is-4">Featured posts</h2>
+      <Link href="/posts/first-post-hello-world">
+        <a>First post, hello world</a>
+      </Link>
+    </Section>
+  </MainLayout>
+);
+
+export default Home;

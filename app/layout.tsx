@@ -24,8 +24,8 @@ const RootLayout: React.FC<React.PropsWithChildren> = ({
   children = undefined,
 }) => {
   return (
-    <html lang="en" className={`${sono.variable} font-mono`}>
-      <body>
+    <html lang="en">
+      <body className={`${sono.variable} font-mono`}>
         <div className="columns">
           <div className="column is-three-fifths is-offset-one-fifth">
             <Header />

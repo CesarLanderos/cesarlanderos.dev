@@ -16,7 +16,7 @@ const Home = () => (
   <MainLayout>
     <section className="hero">
       <div className="hero-body">
-        <h1 className="title">Hi!, My name is César Landeros. test 2</h1>
+        <h1 className="title">Hi!, My name is César Landeros. test 3</h1>
         <p className="subtitle">{sample(phrases)}</p>
       </div>
     </section>

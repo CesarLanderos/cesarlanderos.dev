@@ -6,7 +6,10 @@ import "../styles/globals.css";
 
 export const metadata: Metadata = {
   title: "César Landeros",
-  viewport: "width=device-width, initial-scale=1",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
 };
 
 const sono = Sono({

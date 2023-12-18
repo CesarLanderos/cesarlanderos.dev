@@ -7,18 +7,19 @@ export default function Header() {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <a
-          role="button"
+        <button
+          type="button"
           className="navbar-burger burger"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarBasicExample"
+          tabIndex={0}
         >
           <span aria-hidden="true" />
           <span aria-hidden="true" />
           <span aria-hidden="true" />
-        </a>
+        </button>
       </div>
       <div className={`navbar-menu is-shadowless ${isMenuOpen && "is-active"}`}>
         <div className="navbar-end has-text-centered">

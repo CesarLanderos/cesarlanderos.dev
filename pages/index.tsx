@@ -4,6 +4,7 @@ import Link from "next/link";
 import sample from "lodash/sample";
 import MainLayout from "../layouts/main";
 import Section from "../components/section";
+import { useEffect, useState } from "react";
 
 const phrases = [
   "I like building stuff.",
@@ -14,20 +15,30 @@ const phrases = [
   "Unpopular opinion: PHP is a great languaje, I mean it!.",
 ];
 
-const Home = () => (
-  <MainLayout>
-    <section className="hero">
-      <div className="hero-body">
-        <h1 className="title">Hi!, My name is César Landeros. test 4</h1>
-        <p className="subtitle">{sample(phrases)}</p>
-      </div>
-    </section>
+const Home = () => {
+  const [phrase, setPhrase] = useState(phrases[0]);
 
-    <Section>
-      <h2 className="title is-4">Featured posts</h2>
-      <Link href="/posts/first-post-hello-world">First post, hello world</Link>
-    </Section>
-  </MainLayout>
-);
+  useEffect(() => {
+    setPhrase(sample(phrases));
+  }, []);
+
+  return (
+    <MainLayout>
+      <section className="hero">
+        <div className="hero-body">
+          <h1 className="title">Hi!, My name is César Landeros. test 4</h1>
+          <p className="subtitle">{phrase}</p>
+        </div>
+      </section>
+
+      <Section>
+        <h2 className="title is-4">Featured posts</h2>
+        <Link href="/posts/first-post-hello-world">
+          First post, hello world
+        </Link>
+      </Section>
+    </MainLayout>
+  );
+};
 
 export default Home;

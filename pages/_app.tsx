@@ -6,11 +6,12 @@ const sono = Sono({
   subsets: ["latin"],
   display: "swap",
   fallback: ["monospace"],
+  variable: "--font-sono",
 });
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <main className={sono.className}>
+    <main className={`${sono.variable}`}>
       <Component {...pageProps} />
     </main>
   );

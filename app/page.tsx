@@ -32,9 +32,7 @@ const Home = () => {
 
       <Section>
         <h2 className="title is-4">Featured posts</h2>
-        <Link href="/posts/first-post-hello-world">
-          First post, hello world
-        </Link>
+        <Link href="/blog/first-post-hello-world">First post, hello world</Link>
       </Section>
     </>
   );

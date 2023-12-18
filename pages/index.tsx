@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import sample from "lodash/sample";
 import MainLayout from "../layouts/main";

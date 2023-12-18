@@ -16,7 +16,7 @@ const phrases = [
 ];
 
 const Home = () => {
-  const [phrase, setPhrase] = useState(phrases[0]);
+  const [phrase, setPhrase] = useState("");
 
   useEffect(() => {
     setPhrase(sample(phrases));

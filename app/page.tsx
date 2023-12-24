@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import sample from "lodash/sample";
-import Section from "../components/section";
 import { useEffect, useState } from "react";
 
 const phrases = [
@@ -30,10 +29,10 @@ const Home = () => {
         </div>
       </section>
 
-      <Section>
+      <section className="section">
         <h2 className="title is-4">Featured posts</h2>
         <Link href="/blog/first-post-hello-world">First post, hello world</Link>
-      </Section>
+      </section>
     </>
   );
 };

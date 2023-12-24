@@ -32,7 +32,6 @@ const RootLayout: React.FC<React.PropsWithChildren> = ({
             {children}
           </div>
         </div>
-        s
       </body>
     </html>
   );

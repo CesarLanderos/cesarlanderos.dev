@@ -11,7 +11,7 @@ export default function Header() {
       <div className="navbar-brand">
         <button
           type="button"
-          className="navbar-burger burger"
+          className={`navbar-burger burger ${isMenuOpen && "is-active"}`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="menu"
           aria-expanded="false"
